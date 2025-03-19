@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Pamantasan ng Cabuyao</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        /* Styling for the Contact Section */
+        .contact-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .contact-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #066634;">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="Home.html">
+                <i class="bi bi-book me-2"></i> Pamantasan ng Cabuyao
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="About.html"><i class="bi bi-info-circle me-1"></i>About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Programs.html"><i class="bi bi-mortarboard me-1"></i>Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Admissions.html"><i class="bi bi-person-plus me-1"></i>Admissions</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Contact.html"><i class="bi bi-envelope me-1"></i>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-5 bg-dark text-light text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Contact Us</h1>
+            <p class="lead">We're here to help! Reach out to us with any questions or inquiries.</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center text-success fw-bold">Get in Touch</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+                <div class="col">
+                    <div class="contact-card text-center">
+                        <i class="bi bi-telephone display-4 text-success"></i>
+                        <h5 class="fw-bold mt-3">Phone</h5>
+                        <p>(049) 123-4567</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="contact-card text-center">
+                        <i class="bi bi-envelope display-4 text-success"></i>
+                        <h5 class="fw-bold mt-3">Email</h5>
+                        <p>info@pnc.edu.ph</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="contact-card text-center">
+                        <i class="bi bi-geo-alt display-4 text-success"></i>
+                        <h5 class="fw-bold mt-3">Address</h5>
+                        <p>Cabuyao, Laguna, Philippines</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center text-success fw-bold">Send Us a Message</h2>
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Write your message here" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Map -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center text-success fw-bold">Our Location</h2>
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-8">
+                    <div class="contact-card p-0">
+                        <iframe
+                            width="100%"
+                            height="400"
+                            frameborder="0"
+                            style="border:0"
+                            src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=Pamantasan+ng+Cabuyao,Philippines"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
