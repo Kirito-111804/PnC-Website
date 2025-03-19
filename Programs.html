@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Programs | Pamantasan ng Cabuyao</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        /* Animation for fading in */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Card Styling */
+        .program-card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            overflow: hidden;
+        }
+
+        .program-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Image Styling */
+        .program-img {
+            width: 100%;
+            height: 220px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #066634;">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="Home.html">
+                <i class="bi bi-book me-2"></i> Pamantasan ng Cabuyao
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="About.html"><i class="bi bi-info-circle me-1"></i>About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Programs.html"><i class="bi bi-mortarboard me-1"></i>Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Admissions.html"><i class="bi bi-person-plus me-1"></i>Admissions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html"><i class="bi bi-envelope me-1"></i>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-5 bg-dark text-light text-center fade-in">
+        <div class="container py-3">
+            <h1 class="display-4 fw-bold">Academic Programs</h1>
+            <p class="lead">Explore our diverse programs designed for academic excellence and professional growth.</p>
+        </div>
+    </section>
+
+    <!-- Academic Programs Section -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="text-primary fw-bold">Our Colleges & Programs</h2>
+            <hr class="w-50 mx-auto mb-4">
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- College of Arts and Sciences -->
+                <div class="col fade-in">
+                    <div class="card h-100 program-card">
+                        <img src="images/Arts.jpg" class="program-img" alt="College of Arts and Sciences">
+                        <div class="card-body">
+                            <h5 class="card-title">College of Arts and Sciences</h5>
+                            <p class="card-text"><strong>Bachelor of Science in Psychology</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- College of Business, Accountancy & Administration -->
+                <div class="col fade-in">
+                    <div class="card h-100 program-card">
+                        <img src="images/Business.png" class="program-img" alt="College of Business">
+                        <div class="card-body">
+                            <h5 class="card-title">College of Business, Accountancy & Administration</h5>
+                            <p class="card-text">
+                                <strong>Bachelor of Science in Accountancy</strong><br>
+                                <strong>Bachelor of Science in Business Administration</strong>
+                                <ul class="text-start">
+                                    <li>Major in Financial Management</li>
+                                    <li>Major in Marketing Management</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- College of Computing Studies -->
+                <div class="col fade-in">
+                    <div class="card h-100 program-card">
+                        <img src="images/ACSS.jpg" class="program-img" alt="College of Computing Studies">
+                        <div class="card-body">
+                            <h5 class="card-title">College of Computing Studies</h5>
+                            <p class="card-text">
+                                <strong>Bachelor of Science in Computer Science</strong><br>
+                                <strong>Bachelor of Science in Information Technology</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+                <!-- College of Education -->
+                <div class="col fade-in">
+                    <div class="card h-100 program-card">
+                        <img src="images/Educ.jpg" class="program-img" alt="College of Education">
+                        <div class="card-body">
+                            <h5 class="card-title">College of Education</h5>
+                            <p class="card-text">
+                                <strong>Bachelor of Elementary Education</strong><br>
+                                <strong>Bachelor of Secondary Education</strong>
+                                <ul class="text-start">
+                                    <li>Major in English</li>
+                                    <li>Major in Filipino</li>
+                                    <li>Major in Mathematics</li>
+                                    <li>Major in Social Sciences</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- College of Engineering -->
+                <div class="col fade-in">
+                    <div class="card h-100 program-card">
+                        <img src="images/Engineering.jpg" class="program-img" alt="College of Engineering">
+                        <div class="card-body">
+                            <h5 class="card-title">College of Engineering</h5>
+                            <p class="card-text">
+                                <strong>Bachelor of Science in Computer Engineering</strong><br>
+                                <strong>Bachelor of Science in Electronics Engineering</strong><br>
+                                <strong>Bachelor of Science in Industrial Engineering</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- College of Health and Allied Sciences -->
+                <div class="col fade-in">
+                    <div class="card h-100 program-card">
+                        <img src="images/H&S.jpg" class="program-img" alt="College of Health and Allied Sciences">
+                        <div class="card-body">
+                            <h5 class="card-title">College of Health and Allied Sciences</h5>
+                            <p class="card-text"><strong>Bachelor of Science in Nursing</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add fade-in effect on scroll
+        document.addEventListener("DOMContentLoaded", function() {
+            const fadeElements = document.querySelectorAll(".fade-in");
+            fadeElements.forEach(el => el.classList.add("show"));
+        });
+    </script>
+
+</body>
+</html>
