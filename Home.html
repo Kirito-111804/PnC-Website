@@ -10,34 +10,49 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #066634;">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="Home.html">
-                <i class="bi bi-book me-2"></i>
-                Pamantasan ng Cabuyao
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="About.html"><i class="bi bi-info-circle me-1"></i>About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Programs.html"><i class="bi bi-mortarboard me-1"></i>Programs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Admissions.html"><i class="bi bi-person-plus me-1"></i>Admissions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Contact.html"><i class="bi bi-envelope me-1"></i>Contact</a>
-                    </li>
-                </ul>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #066634;">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="Home.html">
+            <img src="images/Pnc.jpg" alt="Pamantasan ng Cabuyao Logo" width="40" height="40" class="me-2">
+            Pamantasan ng Cabuyao
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <!-- Dropdown for Programs -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-mortarboard me-1"></i>Programs
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="programsDropdown">
+                        <li><a class="dropdown-item" href="Programs.html">All Programs</a></li>
+                        <li><a class="dropdown-item" href="#">College of Arts and Sciences</a></li>
+                        <li><a class="dropdown-item" href="#">College of Business</a></li>
+                        <li><a class="dropdown-item" href="#">College of Computing Studies</a></li>
+                        <li><a class="dropdown-item" href="#">College of Engineering</a></li>
+                        <li><a class="dropdown-item" href="#">College of Education</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Admissions.html"><i class="bi bi-person-plus me-1"></i>Admissions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html"><i class="bi bi-envelope me-1"></i>Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html"><i class="bi bi-info-circle me-1"></i>About</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+
+    <br>
 
     <!-- Hero Section -->
     <section class="py-5 bg-dark text-light" style="background: linear-gradient(rgba(6, 102, 52, 0.9), rgba(6, 102, 52, 0.9)), url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center; background-size: cover;">
